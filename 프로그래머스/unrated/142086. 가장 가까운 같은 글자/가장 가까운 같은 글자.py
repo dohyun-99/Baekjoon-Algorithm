@@ -5,7 +5,7 @@ def solution(s):
             alpha_dict[s[x]].append(x)
         else:
             alpha_dict[s[x]] = [x]
-    print(alpha_dict)
+            
     answer = [-1] * len(s)
     for y in alpha_dict:
         if len(alpha_dict[y]) > 1:
